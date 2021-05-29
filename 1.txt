@@ -1,0 +1,33 @@
+Algoritma 1
+Kamus Data
+	jam01,
+	jam02,
+	jumWaktu,
+	interval,
+	sisaWaktu,
+	V,
+	TS,
+	I,
+BEGIN
+	jam01 = 5*3600 + 25*60 + 15
+	jam02 = 9*3600
+	jumWaktu = jam02 - jam01
+	interval = 7*60
+	jumInterval = jumWaktu / interval
+	sisaWaktu = jumWaktu % Interval
+
+	V = 3
+	TS = 0
+	I = 1
+
+	While(I <= jumInterval)
+		S = interval * V
+		TS = TS + S
+		V = V + 1
+		I++
+	End While
+
+	TS = TS + (sisaWaktu * V)
+
+	Output(TS)
+END
